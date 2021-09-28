@@ -1,0 +1,47 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    cout << "Is there an earthquake? Yes or no? ";
+    string isItReally;
+    cin >> isItReally;
+
+    if ((isItReally == "Yes") || (isItReally == "yes")) {
+        cout << "Explain the magnitude of the earthquake in hundreths place: ";
+        double magni;
+        cin >> magni;
+
+        if (magni < 2.0) {
+            cout << "That's a micro earthquake, nothing to mind at" << endl;
+        }
+        else if ((magni >= 2.0) && (magni < 3.0)) {
+            cout << "That's a very minor earthquake" << endl;
+        }
+        else if ((magni >= 3.0) && (magni < 4.0)) {
+            cout << "That's a minor earthquake" << endl;
+        }
+        else if ((magni >= 4.0) && (magni < 5.0)) {
+            cout << "That's a light earthquake" << endl;
+        }
+        else if ((magni >= 5.0) && (magni < 6.0)) {
+            cout << "That's a moderate earthquake, you should be concerned" << endl;
+        }
+        else if ((magni >= 6.0) && (magni < 7.0)) {
+            cout << "That's a strong earthquake" << endl;
+        }
+        else if ((magni >= 7.0) && (magni < 8.0)) {
+            cout << "That's a major earthquake, you should strictly be following emergency orders" << endl;
+        }
+        else if ((magni >= 8.0) && (magni < 10.0)) {
+            cout << "That's a great earthquake" << endl;
+        }
+        else {
+            cout << "That's a M-E-T-E-O-R-I-C earthquake, get to the national emergency bunker!!!" << endl;
+        }
+    }
+    else {
+        cout << "Then why reach out to me?" << endl;
+    }
+}
