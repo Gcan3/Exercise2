@@ -1,0 +1,43 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    //Please switch between scenario 1 and 2
+    
+
+    //Scenario 1: Friend is 15 minutes late and you are asked if you have change
+    int timeMinutes = 15;
+    cout << "How much change do you have? ";
+    int haveChange;
+    cin >> haveChange;
+    if (timeMinutes >= 15) {
+        if (haveChange > 5) {
+            cout << "Great, my friend is coming late again. Guess I'll just buy coffee with my change" << endl;
+        }
+        else {
+            cout << "Great, my friend is coming late again and I don't have any change to buy for coffee. Guess I'll just go stroll around town for a while" << endl;
+        }
+    }
+    else {
+        cout << "Alright, they are coming sooner so I guess I'll just sit and wait for them here in the food zone" << endl;
+    }
+
+    //Scenario 2: Friend is coming sooner than 15 minutes (hidden first to run scenario 1)
+    /*int timeMinutes = 10;
+    cout << "How much change do you have? ";
+    int haveChange;
+    cin >> haveChange;
+    if (timeMinutes >= 15) {
+        if (haveChange > 5) {
+            cout << "Great, my friend is coming late again. Guess I'll just buy coffee with my change" << endl;
+        }
+        else {
+            cout << "Great, my friend is coming late again and I don't have any change to buy for coffee. Guess I'll just go stroll around town for a while" << endl;
+        }
+    }
+    else {
+        cout << "It doesn't matter, my friend is coming sooner so I'll just sit and wait in the food zone" << endl;
+    }*/
+}
