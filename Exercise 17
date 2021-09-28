@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    bool musicalFriend = true;
+    string friendPlays = "guitar";
+    if (musicalFriend == true) {
+        if (friendPlays == "guitar") {
+            cout << "Welcome to the group, you'll be the guitarist" << endl;
+        }
+        else if (friendPlays == "drums") {
+            cout << "Welcome to the group, you'll be the drummer" << endl;
+        }
+        else {
+            cout << "Sorry, I only need a guitarist and drummer" << endl;
+        }
+    }
+    else {
+        cout << "Sorry, I need someone to play instruments" << endl;
+    }
+
+}
