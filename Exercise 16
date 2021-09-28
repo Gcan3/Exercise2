@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Enter your score from 1 - 100:\n";
+    int score;
+    cin >> score;
+    if (score < 40) {
+        cout << "Your grade is a solid F, sorry friend" << endl;
+    }
+    else if ((score >= 40) && (score <= 49)) {
+        cout << "Your grade is D, keep improving" << endl;
+    }
+    else if ((score >= 50) && (score <= 59)) {
+        cout << "Your grade is C, on par but gotta keep up" << endl;
+    }
+    else if ((score >= 60) && (score <= 69)) {
+        cout << "Your grade is B, good but not great" << endl;
+    }
+    else if (score > 70) {
+        cout << "You an an A grade! Good Job" << endl;
+    }
+    else {
+        cout << "Invalid score" << endl;
+    }
+    
+    //Note: Do not know how to trigger last conditional, it only goes to the first "if" conditional.
